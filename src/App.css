@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+.navbar{
+    padding: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(228, 243, 222);
+}
+.logoo{
+    color: rgb(4, 65, 8);
+    text-align: center;
+    letter-spacing: -1px;
+    font-family: Cursive;
+}
+.btn{
+        background-color: #04AA6D;
+        border: none;
+        color: white;
+        padding: 10px 12px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        width: 6rem;
+        height: 3rem;
+        border-radius: 15px;
+        margin-top: 16px;
+      }
+.form{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 2rem;
+    margin: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+  .container h1{
+    color: rgb(3, 31, 142);
+  }  
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  .inpt{
+    width: 16rem;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border-radius: 8px;
+    
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .btn2{
+        padding: 12px 20px;
+        border-radius: 8px;
+        border: 1px solid transparent;
+        background-color: #007BFF; 
+        color: #fff;
+        font-size: 16px;
+        font-family: Arial, sans-serif;
+        cursor: pointer;
+         margin-left: 1rem;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  .container {
+    
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff; /* Text color to contrast with background */
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
 }
+@media screen and (max-width: 600px){  
+    .navbar{
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgb(165, 254, 127);
+    }
+    .logoo{
+        color: rgb(4, 65, 8);
+        text-align: center;
+        letter-spacing: -1px;
+        font-family: Cursive;
+    }
+    .btn{
+            background-color: #04AA6D;
+            border: none;
+            color: white;
+            padding: 10px 12px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            width: 6rem;
+            height: 3rem;
+            border-radius: 15px;
+            margin-top: 16px;
+          }
+         
+ }
