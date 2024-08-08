@@ -37,7 +37,41 @@ function App() {
     }
   };
   return (
- 
+    <>
+    <nav className='navbar'>
+    <h1 className='logoo'>Find Your Country</h1>
+    <button className='btn'>SignUp</button>
+    </nav>
+    <div className='container'>
+      <div className='form'>
+        <div>
+            <h1>Countries Information</h1>
+            <input 
+            className='inpt'
+              type='text'
+              value={countryName}
+              onChange={(e) => setCountryName(e.target.value)}
+              placeholder='Enter Country Name'
+            />
+            <button className='btn2' onClick={handleSearch}>Search</button>
+            </div>
+            
+      </div>
+
+      {error && <p >{error}</p>}
+            
+      {result && (
+        <div className="result">
+          <h2>{result.name}</h2>
+          <img src={result.flag} alt={`Flag of ${result.name}`} className="flag" />
+          <p><strong>Capital:</strong> {result.capital}</p>
+          <p><strong>Population:</strong> {result.population}</p>
+          <p><strong>Languages:</strong> {result.languages}</p>
+        </div>
+      )}
+
+    </div>
+   </>
    )
 }
 
