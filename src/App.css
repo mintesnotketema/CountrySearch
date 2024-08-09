@@ -34,12 +34,6 @@ body{
   display: flex;
   margin: 2rem;
 }
-
-.container h1{
-  font-size: 3rem;
-  color: rgb(3, 31, 142);
-}  
-
 .inpt{
   width: 16rem;
   padding: 18px;
@@ -51,53 +45,52 @@ body{
   
 }
 .btn2{
-      padding: 18px 20px;
-      border-radius: 8px;
-      border: 1px solid transparent;
-      background-color: #007BFF; 
-      color: #fff;
-      font-size: 16px;
-      font-family: Arial, sans-serif;
-      cursor: pointer;
-       margin-left: 1rem;
-}
-.container {
-  
-  padding: 20px;
+  padding: 18px 20px;
   border-radius: 8px;
-  color: #fff; /* Text color to contrast with background */
-  
-
-}
-.countryname{
-font-size: 6rem;
-}
-.flag{
-width: 30rem;
-
-}
-.spn{
-display: flex;
-margin-top: 5rem;
-gap: 5rem;
-align-items: center;
-padding-left: 5rem;
-}
-section{
-font-size: 2.5rem;
-padding-bottom: 2rem;
-padding-left: 4rem;
-}
-section p{
-text-shadow: 2px 2px 8px #839698;
+  border: 1px solid transparent;
+  background-color: #007BFF; 
+  color: #fff;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  cursor: pointer;
+   margin-left: 1rem;
 }
 .btn2{
-transition: background-color 0.3s, transform 0.3s;
+  transition: background-color 0.3s, transform 0.3s;
 }
 .btn2:hover {
-background-color: #0c3db0;
-transform: scale(1.05);
+  background-color: #0c3db0;
+  transform: scale(1.05);
 }
+.country-card {
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+  padding: 16px; 
+  margin: 16px; 
+  max-width: 400px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  background-color: #fff; 
+  text-align: center; 
+}
+
+.countryname {
+  font-size: 2em; 
+  margin-bottom: 8px; 
+  color: red;
+}
+
+.flag {
+  width: 100%;
+  height: auto; 
+  max-width: 200px; 
+  margin-bottom: 8px;
+}
+
+p {
+  font-size: 1.5em; 
+  margin: 4px 0; 
+}
+
 
 @media screen and (max-width: 700px){  
     .navbar{

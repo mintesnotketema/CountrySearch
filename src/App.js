@@ -19,7 +19,8 @@ function App() {
 
     //  to stop the execution of the current function
         if (!res.ok) {
-          throw new Error('Country not found');       
+          // throw new Error('Country not found');  
+          throw new Error('Country not found');      
       }
       const data = await res.json();
       const country = data[0];
@@ -61,16 +62,12 @@ function App() {
       {error && <p >{error}</p>}
             
       {result && (
-        <div className="result">
-          <h2 className='countryname'>{result.name}</h2>
-          <span className='spn'>
+        <div className="country-card">
+          <h2 className='countryname'>{result.name}</h2> 
           <img src={result.flag} alt={result.name}className="flag" />
-          <section> 
           <p><strong>Capital:</strong> {result.capital}</p>
           <p><strong>Population:</strong> {result.population}</p>
           <p><strong>Languages:</strong> {result.languages}</p> 
-          </section>    
-          </span>
           </div>
         
       )}
