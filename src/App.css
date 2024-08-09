@@ -1,78 +1,111 @@
+body{
+  background: rgb(0,35,36);
+  background: linear-gradient(90deg, rgba(1, 71, 73, 0.877) 0%, rgba(12, 136, 208, 0.939) 42%, rgb(8, 101, 135) 84%);
+}
 .navbar{
-    padding: 10px;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    background-color: rgb(228, 243, 222);
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(228, 243, 222);
 }
 .logoo{
-    color: rgb(4, 65, 8);
-    text-align: center;
-    letter-spacing: -1px;
-    font-family: Cursive;
+  color: rgb(4, 65, 8);
+  text-align: center;
+  letter-spacing: -1px;
+  font-family: Cursive;
 }
 .btn{
-        background-color: #04AA6D;
-        border: none;
-        color: white;
-        padding: 10px 12px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        width: 6rem;
-        height: 3rem;
-        border-radius: 15px;
-        margin-top: 16px;
-      }
+      background-color: #04AA6D;
+      border: none;
+      color: white;
+      padding: 10px 12px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      width: 6rem;
+      height: 3rem;
+      border-radius: 15px;
+      margin-top: 16px;
+    }
 .form{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    gap: 2rem;
-    margin: 2rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 2rem;
 }
 
-  .container h1{
-    color: rgb(3, 31, 142);
-  }  
+.container h1{
+  font-size: 3rem;
+  color: rgb(3, 31, 142);
+}  
 
-  .inpt{
-    width: 16rem;
-    padding: 12px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-    font-family: Arial, sans-serif;
-    border-radius: 8px;
-    
-  }
-  .btn2{
-        padding: 12px 20px;
-        border-radius: 8px;
-        border: 1px solid transparent;
-        background-color: #007BFF; 
-        color: #fff;
-        font-size: 16px;
-        font-family: Arial, sans-serif;
-        cursor: pointer;
-         margin-left: 1rem;
-  }
-  .container {
-    
-    padding: 20px;
-    border-radius: 8px;
-    color: #fff; /* Text color to contrast with background */
-    background-color: #0093E9;
-    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+.inpt{
+  width: 16rem;
+  padding: 18px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  border-radius: 8px;
+  
+}
+.btn2{
+      padding: 18px 20px;
+      border-radius: 8px;
+      border: 1px solid transparent;
+      background-color: #007BFF; 
+      color: #fff;
+      font-size: 16px;
+      font-family: Arial, sans-serif;
+      cursor: pointer;
+       margin-left: 1rem;
+}
+.container {
+  
+  padding: 20px;
+  border-radius: 8px;
+  color: #fff; /* Text color to contrast with background */
+  
 
 }
-@media screen and (max-width: 600px){  
+.countryname{
+font-size: 6rem;
+}
+.flag{
+width: 30rem;
+
+}
+.spn{
+display: flex;
+margin-top: 5rem;
+gap: 5rem;
+align-items: center;
+padding-left: 5rem;
+}
+section{
+font-size: 2.5rem;
+padding-bottom: 2rem;
+padding-left: 4rem;
+}
+section p{
+text-shadow: 2px 2px 8px #839698;
+}
+.btn2{
+transition: background-color 0.3s, transform 0.3s;
+}
+.btn2:hover {
+background-color: #0c3db0;
+transform: scale(1.05);
+}
+
+@media screen and (max-width: 700px){  
     .navbar{
         padding: 10px;
         display: flex;
         justify-content: space-between;
         background-color: rgb(165, 254, 127);
+       
     }
     .logoo{
         color: rgb(4, 65, 8);
@@ -94,5 +127,40 @@
             border-radius: 15px;
             margin-top: 16px;
           }
+
+      h1{
+        font-size: 1rem;
+        
+      }
+  .inpt{
+    width: 8.5rem;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 8px;
+    font-family: Arial, sans-serif;
+    border-radius: 8px;
+  }
+  .btn2{
+    padding: 5px 2px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    background-color: #007BFF; 
+    color: #fff;
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    width: 4rem;
+    margin-top: 5px;
+}
+  .frm{
+    display: flex;
+    flex-direction: column;
+    padding-left: 2rem;
+  }
+  .flag{
+    width: 6rem;
+   
+  }
          
  }

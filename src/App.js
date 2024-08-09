@@ -23,7 +23,7 @@ function App() {
       }
       const data = await res.json();
       const country = data[0];
-      console.log(data[0])
+     // console.log(country)
      
       setResult({
         name: country.name.common ,
@@ -44,7 +44,7 @@ function App() {
     </nav>
     <div className='container'>
       <div className='form'>
-        <div>
+        <div className='frm'>
             <h1>Countries Information</h1>
             <input 
             className='inpt'
@@ -62,12 +62,17 @@ function App() {
             
       {result && (
         <div className="result">
-          <h2>{result.name}</h2>
-          <img src={result.flag} alt={`Flag of ${result.name}`} className="flag" />
+          <h2 className='countryname'>{result.name}</h2>
+          <span className='spn'>
+          <img src={result.flag} alt={result.name}className="flag" />
+          <section> 
           <p><strong>Capital:</strong> {result.capital}</p>
           <p><strong>Population:</strong> {result.population}</p>
-          <p><strong>Languages:</strong> {result.languages}</p>
-        </div>
+          <p><strong>Languages:</strong> {result.languages}</p> 
+          </section>    
+          </span>
+          </div>
+        
       )}
 
     </div>
